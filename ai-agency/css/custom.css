@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Conthrax';
+    src: url('../fonts/Conthrax-SemiBold.woff2') format('woff2'),
+        url('../fonts/Conthrax-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+.brand-text {
+    font-family: 'Conthrax', sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    color: #6773E6;
+    text-transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.4;
+}
+
+img.brand-logo {
+    max-height: 300px;
+    width: auto;
+    margin-right: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .brand-container {
+        flex-direction: column;
+    }
+
+    .brand-logo {
+        max-height: 180px;
+        margin-right: 0 !important; /* Override margin */
+        margin-bottom: 20px;
+    }
+
+    .brand-text {
+        font-size: 48px; /* Smaller text for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-text {
+        font-size: 40px;
+    }
+}
+
+.b {
+    background: #6773E6;
+    border: 3px solid #6773E6;
+}
